@@ -892,6 +892,9 @@ footer{
 }
 
 @media (max-width: 500px){
+    .hero__text{
+            width: 95%;
+    }
     .works-grid{
         grid-template-columns: repeat(1, 1fr);
         gap: 20px;
