@@ -89,12 +89,10 @@ header{
 .btn-secondary{
     border: 2px solid #F2F0FE;
     border-radius: 50px;
-    gap: 10px;
     background: #F2F0FE;
     font-weight: 600;
     font-size: 16px;
-    line-height: 19.5px;
-    letter-spacing: 0%;
+    line-height: 20px;
 }
 
 .header-buttons .btn-secondary:hover{
@@ -128,6 +126,10 @@ header{
     background-color: #F2F0FE;
     color: var(--secondary-color);
     transition: background-color 0.5s ease, color 0.5s;
+}
+
+.header-column-svg{
+    display: none;
 }
 
 /* BURGER-MENU */
@@ -563,6 +565,7 @@ p{
     font-size: 14px;
     line-height: 17.07px;
     letter-spacing: 0%;
+    text-align: left;
 }
 
 .business .text-content{
@@ -750,6 +753,9 @@ footer{
     .btn-rubric{
         font-weight: 600;
         border: 1px solid var(--primary-color); 
+        background-color: #F7F6FF;
+        width: 210px;
+        height: 40px;
     }
     .btn-rubric:hover:not(.btn-all-rubric){
         border-color: var(--primary-color);
@@ -782,7 +788,7 @@ footer{
     }
     .hero__img{
         position: absolute;
-        top: 50%;
+        top: 45%;
         left: 40%;
         right: none;
         transform: translate(-50%, -45%);
@@ -839,6 +845,20 @@ footer{
     .header__menu.open{
         display: block;
         transform: translateX(0);
+    }
+
+    .header-column-svg.open{
+        padding: 210px 20px;
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        top: 100px;
+        bottom: 0;
+        left: 0;
+        right: 100px;
+        z-index: 50;
+        animation: burgerAnimation 3s;
+        transition: transform 1s ease;
     }
 
     .header__menu-item{
@@ -918,6 +938,22 @@ footer{
     .works .card-view-all{
         width: 85vw;
         padding: 100px;
+    }
+    .social-icons-item svg {
+        width: 40px;
+        height: 40px;
+    }
+    .footer-column:nth-child(even){
+        margin-left: 15px;
+    }
+    .footer-column h2{
+        font-size: 20px;
+    }
+    .footer-column li{
+        font-size: 12px;
+    }
+    .footer-title{
+        height:40px;
     }
 }
 
