@@ -78,7 +78,7 @@ header{
     width: 100%;
     height: 2px;
     transform: scaleX(0);
-    background-color: var(--secondary-color); /* п≈п╟п╪п╣п╫п╦я┌п╣ п╫п╟ п╫я┐п╤п╫я▀п╧ я├п╡п╣я┌ */
+    background-color: var(--secondary-color); /* Замените на нужный цвет */
     transition: transform 0.3s;
 }
 
@@ -134,7 +134,7 @@ header{
 
 /* BURGER-MENU */
 
-body.no-scroll {overflow: hidden; /* п≈п╟п©я─п╣я┌ п©я─п╬п╨я─я┐я┌п╨п╦ */}
+body.no-scroll {overflow: hidden; /* Запрет прокрутки */}
 
 .burger-button{
     display: none;
@@ -274,7 +274,7 @@ h5{
 }
 
 .btn-rubric{
-    background-color: transparent; /*п©я─п╬п╥я─п╟я┤п╫п╟я▐*/
+    background-color: transparent; /*прозрачная*/
     margin: 20px 20px 0 0;
     border-radius: 50px;
     border-width: 1px;
@@ -682,7 +682,7 @@ footer{
     }
     .work-card__header h4{
         display: -webkit-box;
-        -webkit-line-clamp: 2; /* п·я│я┌п╟п╡п╩я▐п╣я┌ 3 я│я┌я─п╬п╨п╦ я┌п╣п╨я│я┌п╟ */
+        -webkit-line-clamp: 2; /* Оставляет 3 строки текста */
         -webkit-box-orient: vertical;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -850,15 +850,15 @@ footer{
     .header-column-svg.open{
         padding: 210px 20px;
         position: fixed;
-        height: 100vh;
-        width: 100%;
         top: 100px;
-        bottom: 0;
         left: 0;
-        right: 100px;
         z-index: 50;
         animation: burgerAnimation 3s;
         transition: transform 1s ease;
+    }
+
+    .header-social-icons .social-icons-item{
+        margin-right: 8px;
     }
 
     .header__menu-item{
@@ -936,7 +936,6 @@ footer{
         width: 70vw;
     }
     .works .card-view-all{
-        width: 85vw;
         padding: 100px;
     }
     .social-icons-item svg {
@@ -960,6 +959,5 @@ footer{
 @media (max-width: 320px){
     
 }
-
 
 
